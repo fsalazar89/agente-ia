@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  app-ia:
+    build: .
+    container_name: python_ia_container
+    # Cargamos el archivo de variables de entorno automáticamente
+    env_file:
+      - .env
+    # Mapeo de volúmenes (Opcional, útil para desarrollo)
+    volumes:
+      - .:/app
+    # Si tu app es un bot o script que termina, esto lo mantiene vivo para ver logs
+    tty: true 
+    stdin_open: true
+    restart: always
