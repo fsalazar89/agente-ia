@@ -40,6 +40,12 @@ Cuando el modelo solicite ejecutar una herramienta, el sistema pedirá confirmac
 - `s` para autorizar.
 - `n` para cancelar.
 
+## Pruebas unitarias
+Ejecuta:
+```bash
+pytest -q
+```
+
 ## Estructura del proyecto
 - `main.py`: bucle principal de conversación y control de permisos.
 - `core/agente.py`: configuración del modelo y envío de mensajes.
